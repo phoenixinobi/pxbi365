@@ -4,8 +4,11 @@ if (typeof (pxbiD365) == "undefined") {
 
 (function() {
     var self = this;
-	
-    self.Picklist = {};
+
+    if (typeof (self.Picklist) == "undefined") {
+    	self.Picklist = {};
+    }
+    
     (function() { 
         var self = this;
         var context = {};
